@@ -7,7 +7,7 @@ import {
 } from "../../utils/serverresponse/successresponse";
 import { UserService } from "./auth.service";
 import { compare, hash } from "../../utils/hashes/hasher";
-import { generateToken, verifyToken } from "../../utils/hashes/jwthandler";
+import { generateAccessAndRefreshTokens, generateToken, verifyToken } from "../../utils/hashes/jwthandler";
 import logger from "../../utils/logger";
 import { SessionService } from "./session.service";
 import { ISession } from "./token.model";
@@ -49,7 +49,7 @@ export const authController = {
     const tokenPayload = {
       email: createUser.email,
       role: createUser.role,
-      id: createUser._id,
+      id: createUser._id.toString(),
     };
 
     const token = generateToken(
@@ -77,60 +77,45 @@ export const authController = {
   }),
 
   loginUser: asyncHandler(async (req: Request, res: Response) => {
-    const { email, password } = req.body;
+  const { email, password } = req.body;
 
-    const user = await UserService.findOneByEmail(email);
-    if (!user) {
-      return errorResponse(res, "User does not exist", 404);
-    }
+  const user = await UserService.findOneByEmail(email);
+  if (!user) {
+    return errorResponse(res, "User does not exist", 404);
+  }
 
-    const passwordMatches = await compare(password, user.password);
-    if (!passwordMatches) {
-      return errorResponse(res, "Invalid email or password", 401);
-    }
+  const passwordMatches = await compare(password, user.password);
+  if (!passwordMatches) {
+    return errorResponse(res, "Invalid email or password", 401);
+  }
 
-    // Generate access and refresh tokens
-    const accessToken = generateToken(
-      {
-        id: user._id,
-        email: user.email,
-        role: user.role,
-      },
-      process.env.ACCESS_TOKEN_SECRET!,
-      "15m"
-    );
+  // Generate both tokens
+  const { accessToken, refreshToken } = generateAccessAndRefreshTokens({
+    id: user._id.toString(),
+    email: user.email,
+    role: user.role,
+  });
 
-    const refreshToken = generateToken(
-      {
-        id: user._id,
-        email: user.email,
-        role: user.role,
-      },
-      process.env.REFRESH_TOKEN_SECRET!,
-      "7d"
-    );
+  // Store refresh token in session DB
+  const sessionPayload: ISession = {
+    userId: user._id.toString(),
+    token: refreshToken,
+    identifier: "refresh_token",
+  };
+  await SessionService.createSession(sessionPayload);
 
-    // Store refresh token in session DB
-    const sessionPayload: ISession = {
-      userId: user._id.toString(),
-      token: refreshToken,
-      identifier: "refresh_token",
-    };
-    await SessionService.createSession(sessionPayload);
+  // Set refresh token in HttpOnly cookie
+  setRefreshTokenCookie(res, refreshToken);
 
-    // Set refresh token in HttpOnly cookie
-    setRefreshTokenCookie(res, refreshToken);
+  // Return response
+  const responseData = {
+    email: user.email,
+    role: user.role,
+    accessToken,
+  };
 
-    // Return access token and user info
-    const responseData = {
-      email: user.email,
-      role: user.role,
-      accessToken,
-      user,
-    };
-
-    return successResponse(res, responseData, "User logged in successfully");
-  }),
+  return successResponse(res, responseData, "User logged in successfully");
+}),
 
   refreshAccessToken: asyncHandler(async (req: Request, res: Response) => {
     const { refreshToken } = req.cookies;

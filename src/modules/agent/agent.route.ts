@@ -5,6 +5,6 @@ import { agentController } from './agent.controller';
 
 const agentRoute: Router = Router();
 
-agentRoute.get('/commissions', authorize(['agent']), agentController.getCommissionHistory);
+agentRoute.get('/commissions', authorize(['lender']), agentController.getCommissionHistory);
 
 export default agentRoute;

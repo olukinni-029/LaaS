@@ -28,16 +28,12 @@ const schemas = {
  signupSchema : Joi.object().keys({
   email: Joi.string().email().required(),
   password: Joi.string().min(6).required(),
-  role: Joi.string().valid(Role.CUSTOMER, Role.ADMIN, Role.LENDER).required(),
+  role: Joi.string().valid(Role.CUSTOMER, Role.ADMIN, Role.LENDER),
 }),
 
 loginSchema : Joi.object().keys({
   email: Joi.string().email().required(),
   password: Joi.string().required(),
-}),
-
-refreshSchema : Joi.object().keys({
-  refreshToken: Joi.string().required(),
 }),
 }
 

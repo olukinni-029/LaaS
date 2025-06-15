@@ -7,6 +7,6 @@ const authRoute : Router = Router();
 
 authRoute.post('/register',validate(schemas.signupSchema),authController.createUser);
 authRoute.post('/login',validate(schemas.loginSchema),authController.loginUser);
-authRoute.post('/refresh-token',validate(schemas.refreshSchema), authController.refreshAccessToken);
+authRoute.post('/refresh-token', authController.refreshAccessToken);
 
 export default authRoute;

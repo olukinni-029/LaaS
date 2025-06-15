@@ -342,3 +342,118 @@
     at fulfilled (C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\auth\auth.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) - /api/v1/auth/register - POST - ::1
 2025-06-15T18:02:53.582Z [right meow!] [32minfo[39m: SIGINT received....
+2025-06-15T18:52:32.902Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T18:52:33.062Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T18:52:33.065Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 13896 - ENV: development
+2025-06-15T18:52:33.159Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T18:52:48.905Z [right meow!] [33mwarn[39m: Duplicate email registration attempt: olu@gmail.com
+2025-06-15T18:56:23.861Z [right meow!] [32minfo[39m: User created successfully
+2025-06-15T19:00:23.859Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T19:00:23.988Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T19:00:23.990Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 16732 - ENV: development
+2025-06-15T19:00:24.049Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T19:09:28.343Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T19:09:28.429Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T19:09:28.431Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 16540 - ENV: development
+2025-06-15T19:09:28.478Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T19:09:56.940Z [right meow!] [31merror[39m: Cannot destructure property 'refreshToken' of 'req.cookies' as it is undefined.
+2025-06-15T19:09:58.718Z [right meow!] [31merror[39m: Error: Cannot destructure property 'refreshToken' of 'req.cookies' as it is undefined. - TypeError: Cannot destructure property 'refreshToken' of 'req.cookies' as it is undefined.
+    at C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\auth\auth.controller.ts:121:13
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\auth\auth.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\auth\auth.controller.ts:4:12)
+    at C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\auth\auth.controller.ts:120:74
+    at C:\Users\USER\Desktop\Loan-as-a-Service\src\utils\common\asyncHandler.ts:8:13
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Desktop\Loan-as-a-Service\src\utils\common\asyncHandler.ts:8:71
+    at new Promise (<anonymous>) - /api/v1/auth/refresh-token - POST - ::1
+2025-06-15T19:16:33.598Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T19:16:33.663Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T19:16:33.664Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 14884 - ENV: development
+2025-06-15T19:16:33.712Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T19:19:46.987Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T19:19:47.072Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T19:19:47.074Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 8228 - ENV: development
+2025-06-15T19:19:47.145Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T19:20:28.500Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T19:20:28.618Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T19:20:28.619Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 2168 - ENV: development
+2025-06-15T19:20:28.717Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T19:20:40.513Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/refresh-token - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:30:54.717Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T19:30:54.792Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T19:30:54.795Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 3288 - ENV: development
+2025-06-15T19:30:54.869Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T19:31:18.292Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T19:31:18.389Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T19:31:18.392Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 13628 - ENV: development
+2025-06-15T19:31:18.480Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T19:32:01.224Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/register - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:32:01.689Z [right meow!] [32minfo[39m: User created successfully
+2025-06-15T19:32:44.673Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/register - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:32:44.941Z [right meow!] [32minfo[39m: User created successfully
+2025-06-15T19:33:44.690Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/register - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:33:44.981Z [right meow!] [32minfo[39m: User created successfully
+2025-06-15T19:37:52.143Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/apply - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:39:41.824Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/login - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:40:12.530Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/apply - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:40:34.354Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/apply - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:45:57.797Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/684f21107489fc70d59650ab/approve - Method: PATCH - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:46:47.510Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/684f21107489fc70d59650ab/approve - Method: PATCH - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:47:01.044Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/684f21107489fc70d59650ab/approve - Method: PATCH - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:47:09.473Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/login - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T19:47:44.966Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/684f21107489fc70d59650ab/approve - Method: PATCH - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T21:22:12.971Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T21:22:14.616Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T21:22:14.617Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 15872 - ENV: development
+2025-06-15T21:22:43.597Z [right meow!] [32minfo[39m: Disconnected from MongoDB
+2025-06-15T21:26:03.009Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T21:26:03.133Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T21:26:03.135Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 15252 - ENV: development
+2025-06-15T21:26:03.390Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T21:26:12.175Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/684f21107489fc70d59650ab/approve - Method: PATCH - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T21:55:30.592Z [right meow!] [32minfo[39m: SIGINT received....
+2025-06-15T22:32:48.097Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T22:32:48.254Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T22:32:48.255Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 17084 - ENV: development
+2025-06-15T22:32:48.484Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T22:33:33.230Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/login - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:33:59.771Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/684f21107489fc70d59650ab/approve - Method: PATCH - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:36:59.169Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T22:36:59.257Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T22:36:59.266Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 14280 - ENV: development
+2025-06-15T22:36:59.319Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T22:39:44.207Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T22:39:44.253Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T22:39:44.254Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 2504 - ENV: development
+2025-06-15T22:39:44.287Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T22:40:52.183Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T22:40:52.270Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T22:40:52.271Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 16352 - ENV: development
+2025-06-15T22:40:52.305Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T22:41:47.573Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/login - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:42:07.578Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/684f21107489fc70d59650ab/approve - Method: PATCH - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:45:30.865Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/684f21107489fc70d59650ab/reject - Method: PATCH - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:45:30.966Z [right meow!] [31merror[39m: Loan not found or cannot be rejected (already processed)
+2025-06-15T22:45:30.974Z [right meow!] [31merror[39m: Error: Loan not found or cannot be rejected (already processed) - Error: Loan not found or cannot be rejected (already processed)
+    at Function.<anonymous> (C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\loan\loan.service.ts:97:13)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\loan\loan.service.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) - /api/v1/loan/684f21107489fc70d59650ab/reject - PATCH - ::1
+2025-06-15T22:46:14.621Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/apply - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:46:42.836Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/register - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:46:43.092Z [right meow!] [32minfo[39m: User created successfully
+2025-06-15T22:47:26.590Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/apply - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:47:55.874Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/684f4d7e3bcc16d64da22f0b/reject - Method: PATCH - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:50:42.271Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/login - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:51:08.973Z [right meow!] [32minfo[39m: Request URL: /api/v1/loan/ - Method: GET - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:53:36.674Z [right meow!] [32minfo[39m: Connecting to MongoDB - for @development
+2025-06-15T22:53:36.711Z [right meow!] [32minfo[39m: Prometheus metrics are available at http://localhost:2026/metrics
+2025-06-15T22:53:36.713Z [right meow!] [32minfo[39m: Server is live on http://localhost:2026 - PID: 8812 - ENV: development
+2025-06-15T22:53:36.750Z [right meow!] [32minfo[39m: Connected to MongoDB - for @development
+2025-06-15T22:55:38.216Z [right meow!] [32minfo[39m: Request URL: /api/v1/agent/commissions - Method: GET - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:56:48.393Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/login - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T22:57:05.256Z [right meow!] [32minfo[39m: Request URL: /api/v1/agent/commissions - Method: GET - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T23:02:36.472Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/login - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-15T23:03:12.765Z [right meow!] [32minfo[39m: Request URL: /api/v1/repay/684f21107489fc70d59650ab - Method: POST - IP: ::1 - PostmanRuntime/7.44.0

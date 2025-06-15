@@ -17,7 +17,10 @@ import { prometheusMetrics, trackRequestDuration } from '../utils/prometheusconf
 dotenv.config();
 
 export const setupMiddleware = (app: express.Application): void => {
-  app.use(cors());
+  app.use(cors({
+  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  credentials: true
+}));
   app.use((req: Request, res: Response, next) => {
     logger.info(`Request URL: ${req.url} - Method: ${req.method} - IP: ${req.ip} - ${req.get('user-agent')}`);
     next();

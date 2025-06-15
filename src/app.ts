@@ -14,8 +14,13 @@ import rootRouter from "./index.route";
 import { setupMiddleware } from './middlewares/setup_middleware';
 
 const app: Express = express();
+
 app.use(express.json());
+
+setupMiddleware(app)
+
 connectToMongoDB();
+
 
 app.get("/", (_req, res) => {
   res.send("LaaS API is live!");
@@ -24,7 +29,6 @@ app.get("/", (_req, res) => {
 // === Create HTTP server ===
 const httpServer = createServer(app);
 app.use('/api/v1',rootRouter);
-setupMiddleware(app)
 setupErrorHandlers(app);
 
 
