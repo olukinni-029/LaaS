@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES6", "DOM", "DOM.Iterable"],
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "typeRoots": ["./node_modules/@types", "./src/types"]
+  },
+  "paths": {
+    "*": ["node_modules/*"]
+  },
+  "include": ["src/**/*", "src/types/express.d.ts", "src/**/*.ts", "src/sanbox/sandbox.ts"]
+}

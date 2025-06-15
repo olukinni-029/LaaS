@@ -1,0 +1,45 @@
+2025-06-13T20:42:19.355Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T20:43:26.546Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T20:46:26.735Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T20:49:30.912Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T20:51:41.794Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T20:52:42.265Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T20:55:17.527Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T21:09:19.263Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T21:10:58.341Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T21:17:43.835Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T21:20:16.656Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T21:23:30.992Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T21:24:59.705Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T21:28:01.440Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-13T21:29:21.439Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-14T20:38:01.121Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-14T20:45:01.407Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-14T20:46:38.284Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-14T20:52:09.933Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-14T20:54:23.336Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-14T20:56:07.050Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-14T21:45:38.023Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-15T12:16:55.547Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-15T17:41:43.078Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-15T17:50:43.145Z [right meow!] [31merror[39m: Error: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2025-06-15T17:57:02.464Z [right meow!] [31merror[39m: Cannot read properties of undefined (reading 'email')
+2025-06-15T17:57:02.496Z [right meow!] [31merror[39m: Error: Cannot read properties of undefined (reading 'email') - TypeError: Cannot read properties of undefined (reading 'email')
+    at C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\auth\auth.controller.ts:28:53
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\auth\auth.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\auth\auth.controller.ts:4:12)
+    at C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\auth\auth.controller.ts:25:66
+    at C:\Users\USER\Desktop\Loan-as-a-Service\src\utils\common\asyncHandler.ts:8:13
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Desktop\Loan-as-a-Service\src\utils\common\asyncHandler.ts:8:71
+    at new Promise (<anonymous>) - /api/v1/auth/register - POST - ::1
+2025-06-15T17:59:23.613Z [right meow!] [31merror[39m: secretOrPrivateKey must have a value
+2025-06-15T17:59:23.626Z [right meow!] [31merror[39m: Error: secretOrPrivateKey must have a value - Error: secretOrPrivateKey must have a value
+    at Object.module.exports (C:\Users\USER\Desktop\Loan-as-a-Service\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateToken (C:\Users\USER\Desktop\Loan-as-a-Service\src\utils\hashes\jwthandler.ts:8:14)
+    at C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\auth\auth.controller.ts:55:32
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\auth\auth.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) - /api/v1/auth/register - POST - ::1
