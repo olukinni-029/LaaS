@@ -457,3 +457,11 @@
 2025-06-15T22:57:05.256Z [right meow!] [32minfo[39m: Request URL: /api/v1/agent/commissions - Method: GET - IP: ::1 - PostmanRuntime/7.44.0
 2025-06-15T23:02:36.472Z [right meow!] [32minfo[39m: Request URL: /api/v1/auth/login - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
 2025-06-15T23:03:12.765Z [right meow!] [32minfo[39m: Request URL: /api/v1/repay/684f21107489fc70d59650ab - Method: POST - IP: ::1 - PostmanRuntime/7.44.0
+2025-06-16T10:36:27.943Z [right meow!] [31merror[39m: Cannot destructure property 'loanId' of 'req.params' as it is undefined.
+2025-06-16T10:36:28.224Z [right meow!] [31merror[39m: Cannot destructure property 'loanId' of 'req.params' as it is undefined.
+2025-06-16T10:36:28.229Z [right meow!] [31merror[39m: Cannot destructure property 'page' of 'req.query' as it is undefined.
+2025-06-16T11:32:46.989Z [right meow!] [31merror[39m: Unauthorized: User not found in request.
+2025-06-16T11:42:19.601Z [right meow!] [31merror[39m: Unauthorized: User not found in request.
+2025-06-16T12:35:34.093Z [right meow!] [31merror[39m: Unauthorized: User not found in request.
+2025-06-16T13:00:43.204Z [right meow!] [31merror[39m: Unauthorized: User not found in request.
+2025-06-16T13:22:07.710Z [right meow!] [31merror[39m: Unauthorized: User not found in request.

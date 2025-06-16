@@ -72,7 +72,7 @@ POST   /api/v1/repayment/:loanId            # customer
 
 ### 🧾 Agent
 ```http
-GET    /api/v1/agents/commissions           # agent
+GET    /api/v1/agents/commissions           # lender
 ```
 
 ---

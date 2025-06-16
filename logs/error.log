@@ -62,3 +62,11 @@
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\USER\Desktop\Loan-as-a-Service\src\modules\loan\loan.service.ts:38:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) - /api/v1/loan/684f21107489fc70d59650ab/reject - PATCH - ::1
+2025-06-16T10:36:27.943Z [right meow!] [31merror[39m: Cannot destructure property 'loanId' of 'req.params' as it is undefined.
+2025-06-16T10:36:28.224Z [right meow!] [31merror[39m: Cannot destructure property 'loanId' of 'req.params' as it is undefined.
+2025-06-16T10:36:28.229Z [right meow!] [31merror[39m: Cannot destructure property 'page' of 'req.query' as it is undefined.
+2025-06-16T11:32:46.989Z [right meow!] [31merror[39m: Unauthorized: User not found in request.
+2025-06-16T11:42:19.601Z [right meow!] [31merror[39m: Unauthorized: User not found in request.
+2025-06-16T12:35:34.093Z [right meow!] [31merror[39m: Unauthorized: User not found in request.
+2025-06-16T13:00:43.204Z [right meow!] [31merror[39m: Unauthorized: User not found in request.
+2025-06-16T13:22:07.710Z [right meow!] [31merror[39m: Unauthorized: User not found in request.
